@@ -41,12 +41,3 @@ echo "## 📓 Daily DevOps Log — Day 5
 - Learn to simulate service failures and recover them automatically.
 - Expand automation scripts to detect errors in logs and respond.
 " > day5_log.md
-
-# 2️⃣ Añadir al repositorio
-git add day5_log.md
-
-# 3️⃣ Commit con mensaje
-git commit -m "Day 5: Permissions, nginx debugging and automation script"
-
-# 4️⃣ Subir cambios
-git push origin main
