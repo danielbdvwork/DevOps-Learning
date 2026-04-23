@@ -1,0 +1,44 @@
+```markdown id="log9_short"
+# 📓 Daily DevOps Log — Day 9  
+Date: 2026-04-09  
+Focus: Bash scripting & systemd automation
+
+---
+
+## 🧠 Summary
+
+Improved a Linux service monitoring script by moving from basic conditional logic to a more structured and reusable Bash tool using systemd exit codes and functions.
+
+---
+
+## 🔧 Work done
+
+- Added input validation using `$1`
+- Made script reusable for any service (`SERVICE="$1"`)
+- Replaced string-based checks with:
+  - `systemctl is-active --quiet`
+  - `systemctl is-failed --quiet`
+- Implemented service states handling:
+  - active → no action
+  - failed → restart
+  - inactive → start
+- Added function for reusable status checks
+- Verified service state after actions
+
+---
+
+## 🧠 Key learnings
+
+- Exit codes are more reliable than text parsing
+- `--quiet` is essential for scripting
+- Functions reduce duplication and improve structure
+- Always validate input and verify results after actions
+
+---
+
+## 📌 Next steps
+
+- Add logging system
+- Improve error handling and exit codes
+- Move towards cron automation and Ansible
+```
